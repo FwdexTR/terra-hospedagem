@@ -86,6 +86,18 @@ node scripts/otimizar-fotos.mjs
 A seleção de quais fotos entram no site está no objeto `SELECAO` desse script,
 por número da foto dentro de cada pasta (ordem alfabética).
 
+## Ícones
+
+O favicon e os ícones de app saem do mesmo símbolo do `Logo.tsx`. Se o símbolo
+mudar, regere com:
+
+```bash
+node scripts/gerar-icones.mjs
+```
+
+Isso reescreve `src/app/icon.svg`, `icon.png`, `apple-icon.png`,
+`public/favicon.ico` e os ícones do manifesto em `public/icones/`.
+
 ## Publicar
 
 Site estático, sem back-end.
