@@ -23,14 +23,14 @@ npm run dev
 
 ## Estrutura
 
-- `/` — vitrine da rede: hero, os quatro prédios, café da manhã do Royal
+- `/` — vitrine da rede: hero, os quatro prédios, café da manhã do Boulevard
   (rotulado e com link), o que está incluso, empresas, FAQ e contato.
-- `/royal`, `/via-park`, `/soho`, `/flavan` — uma página por prédio, geradas
+- `/boulevard`, `/via-park`, `/soho`, `/flavan` — uma página por prédio, geradas
   estaticamente a partir de `PREDIOS` em `src/data/predios.ts`.
 
 Cada página mostra **apenas** o que é daquela unidade. A área comum vive em
 `predio.areaComum` e é `null` onde não existe, então a seção simplesmente não
-renderiza — foi assim que se resolveu a confusão de o rooftop do Royal aparecer
+renderiza — foi assim que se resolveu a confusão de o rooftop do Boulevard aparecer
 embaixo do Via Park.
 
 ## Marca
@@ -71,7 +71,7 @@ endereço:
 O único endereço conhecido veio da fachada fotografada do Via Park: **424**.
 
 Áreas comuns já confirmadas pelo cliente: o rooftop com café da manhã é
-exclusivo do **Royal**, o lazer (piscina, academia, sauna) é exclusivo do
+exclusivo do **Boulevard**, o lazer (piscina, academia, sauna) é exclusivo do
 **Via Park**, e **Flavan** e **Soho** não têm área comum.
 
 ## Fotos

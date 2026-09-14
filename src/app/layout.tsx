@@ -55,7 +55,7 @@ export const metadata: Metadata = {
         url: "/fotos/rooftop/rooftop-01.webp",
         width: 1200,
         height: 630,
-        alt: "Terraço da Terra Hospedagem ao pôr do sol",
+        alt: "Rooftop da Terra Hospedagem ao pôr do sol",
       },
     ],
   },

@@ -28,8 +28,8 @@ const ATALHOS = [
 
 export function Contato({ fundo: fundoPredio }: { fundo?: Foto }) {
   // Nas páginas de prédio o fundo vem da própria unidade; na home fica o
-  // terraço. Usar o terraço em toda página faria o Soho e o Flavan parecerem
-  // ter rooftop, que é exclusivo do Royal.
+  // rooftop. Usar o rooftop em toda página faria o Soho e o Flavan parecerem
+  // ter rooftop, que é exclusivo do Boulevard.
   const fundo = fundoPredio ?? ROOFTOP[1] ?? ROOFTOP[0];
 
   return (

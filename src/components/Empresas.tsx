@@ -35,7 +35,7 @@ const VANTAGENS = [
 ];
 
 export function Empresas() {
-  // Sala do Royal — comunica o padrão de apartamento que a empresa recebe
+  // Sala do Boulevard — comunica o padrão de apartamento que a empresa recebe
   const foto = PREDIOS[0].fotos[0];
 
   return (

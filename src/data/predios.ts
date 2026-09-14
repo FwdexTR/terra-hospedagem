@@ -26,7 +26,7 @@ export type ItemAreaComum = {
 
 /**
  * Área comum de um prédio. Só existe onde de fato existe: o rooftop com café da
- * manhã é exclusivo do Royal, o lazer é exclusivo do Via Park, e o Flavan não
+ * manhã é exclusivo do Boulevard, o lazer é exclusivo do Via Park, e o Flavan não
  * tem área comum. Atribuir isso errado faria o site prometer o que a unidade
  * não entrega.
  */
@@ -62,10 +62,10 @@ export const ESTADO = "RJ";
 
 export const PREDIOS: Predio[] = [
   {
-    slug: "royal",
-    nome: "Royal",
+    slug: "boulevard",
+    nome: "Boulevard",
     subtitulo: "Apartamentos amplos",
-    chamada: "O mais espaçoso, com café da manhã no terraço",
+    chamada: "O mais espaçoso, com café da manhã no rooftop",
     descricao:
       "Apartamentos de um e dois quartos com sala separada, varanda e vista aberta da cidade. Acabamento recente, porcelanato em todos os ambientes e banheiros revestidos em mármore. A cozinha tem fogão, geladeira, micro-ondas e cafeteira, e a área de serviço vem com máquina de lavar — dá para morar meses sem sentir falta de nada.",
     endereco: null,
@@ -85,13 +85,13 @@ export const PREDIOS: Predio[] = [
       "Smart TV",
       "Enxoval incluso",
     ],
-    fotos: galeria.royal ?? [],
+    fotos: galeria.boulevard ?? [],
     areaComum: {
-      rotulo: "Exclusivo do Royal",
+      rotulo: "Exclusivo do Boulevard",
       titulo: "O dia começa no",
-      destaque: "terraço",
+      destaque: "rooftop",
       texto:
-        "Na cobertura do Royal tem um rooftop com vista aberta para a cidade, onde o café da manhã é servido todos os dias. No fim da tarde, o mesmo espaço vira o melhor lugar do prédio para sentar e ver o sol se pôr.",
+        "Na cobertura do Boulevard, com vista aberta para a cidade, o café da manhã é servido todos os dias. No fim da tarde, o mesmo espaço vira o melhor lugar do prédio para sentar e ver o sol se pôr.",
       itens: [
         {
           icone: "coffee",
@@ -103,7 +103,7 @@ export const PREDIOS: Predio[] = [
           icone: "sunset",
           titulo: "Vista aberta da cidade",
           texto:
-            "O terraço fica na cobertura, de frente para o pôr do sol. É o melhor fim de tarde do prédio.",
+            "Fica na cobertura, de frente para o pôr do sol. É o melhor fim de tarde do prédio.",
         },
         {
           icone: "utensils",
@@ -225,7 +225,7 @@ export const PREDIOS: Predio[] = [
   },
 ];
 
-/** Fotos do terraço do Royal — usadas também como capa da home. */
+/** Fotos do rooftop do Boulevard — usadas também como capa da home. */
 export const ROOFTOP: Foto[] = galeria.rooftop ?? [];
 
 export function predioPorSlug(slug: string): Predio | undefined {

@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 
 const LINKS = [
   { href: "/#predios", texto: "Prédios" },
-  { href: "/royal", texto: "Café da manhã" },
+  { href: "/boulevard", texto: "Café da manhã" },
   { href: "/#incluso", texto: "O que está incluso" },
   { href: "/#empresas", texto: "Para empresas" },
   { href: "/#contato", texto: "Contato" },

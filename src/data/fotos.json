@@ -1,85 +1,85 @@
 {
-  "royal": [
+  "boulevard": [
     {
-      "src": "/fotos/royal/royal-01.webp",
+      "src": "/fotos/boulevard/boulevard-01.webp",
       "largura": 1200,
       "altura": 1600,
       "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABQBACdASoQABUAPwFqrE8rJiQiMAgBYCAJQBdgBER6P+4MsDiELNXwDiPAAPxmQGa8bJ1GyYJm5B6ti8Q4CviLVNmrK1YXaxAtPvGWUsQnzjN98rsaPgDfJpw17tEl1ovMyT18GxJ4W/NgnzceHAND1RAAAA=="
     },
     {
-      "src": "/fotos/royal/royal-02.webp",
+      "src": "/fotos/boulevard/boulevard-02.webp",
       "largura": 1200,
       "altura": 1600,
       "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQBACdASoQABUAPwForE6rJiQiMAgBYCAJYwDA3BakaQcx7d8CvZNYAAD80EAiUs6MVblNHt38AtV3mjm/4KnVcc3b3K6KaOQXhVkBthxLtaoUWXNMmLoJAXXdASHG7ZozohUfQydhOwqOSyLAAA=="
     },
     {
-      "src": "/fotos/royal/royal-03.webp",
+      "src": "/fotos/boulevard/boulevard-03.webp",
       "largura": 1200,
       "altura": 1600,
       "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQAwCdASoQABUAPwFqrE6rJiQiMAgBYCAJQBadAkJOp2nVbyfbyAAAzaD04++au72BbJ01MrR8pCyG69gxKi1ljiqWAw6ISdBm8l5gBLQp6ZZ25iwW/1dL26exTNlxH2OsoMnizlSzN/aDcxDLKeAA"
     },
     {
-      "src": "/fotos/royal/royal-04.webp",
+      "src": "/fotos/boulevard/boulevard-04.webp",
       "largura": 1200,
       "altura": 1600,
       "blur": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQBACdASoQABUAPwFqrE8rJiQiMAgBYCAJQBOgA6dV7NPQyUwIUVXwAADK8YzChM7yP2e4qbMLEGYjf3kBCF+o9VjTJ2ydz0sjZL+8X7pagdXWIxyRxM9ljAKqORi2CkDsxCi360B+xE5lSGFYBg1wAAA="
     },
     {
-      "src": "/fotos/royal/royal-05.webp",
+      "src": "/fotos/boulevard/boulevard-05.webp",
       "largura": 1200,
       "altura": 1600,
       "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADQAwCdASoQABUAPwForE6rJaQiMAgBYCAJQAAKmAebJV2bkaRAfgAA/dNwpjMl1fbRvvGbuYQJKcBaTXf0/BcTx2VcC8R1xyYGxUzJYZzTWfSYK8zYCySPrl8d1daii0Ky0Id3s6ywURpPal0AAA=="
     },
     {
-      "src": "/fotos/royal/royal-06.webp",
+      "src": "/fotos/boulevard/boulevard-06.webp",
       "largura": 1200,
       "altura": 1600,
       "blur": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADwAwCdASoQABUAPwFqrU8rJiQiMAgBYCAJQBOgA3Pbw8PLXF642UiAAP5Z6idVflRHSZ0CDPepOMbbt5yFNJFLJULN7svnTe3LTgmD1407y+477JjHmYc+uGxeDKXlHmwPTmVswd7uxohGR96kcdaWy3sp5ssojyHCEDgocixIAA=="
     },
     {
-      "src": "/fotos/royal/royal-07.webp",
+      "src": "/fotos/boulevard/boulevard-07.webp",
       "largura": 1200,
       "altura": 1600,
       "blur": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADwAwCdASoQABUAPwFqrU8rJiQiMAgBYCAJYwCdAB6nh0Sb5gTT573AAP6UiFegbZsEPy9isY3sbNIr+OQlVxTiWt78O9dEZ0HFVn7NEVKzgWpYaSpoej7kFEyetFRg0VwTXW7VALvUkxdqLNrv2zxssBe8Tu9CfzqyMDTTU6oMkn4RAAA="
     },
     {
-      "src": "/fotos/royal/royal-08.webp",
+      "src": "/fotos/boulevard/boulevard-08.webp",
       "largura": 1200,
       "altura": 1600,
       "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAwBACdASoQABUAPwFqrE6rJiQiMAgBYCAJYwCdABxtaIrNST9+SFQiSIAA/mYMO4ZdYh4Xe+eqpmR36HcEhl5jsruVMwnUxLmpzx5LpNBEkd07f0huOyleIEOBkW0E96iAraW8pYlsNL1WeQG/bkMcgZqNPkt5UFpotNwTNMnL4PYxxBu03eJIWAAAAA=="
     },
     {
-      "src": "/fotos/royal/royal-09.webp",
+      "src": "/fotos/boulevard/boulevard-09.webp",
       "largura": 1200,
       "altura": 1600,
       "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADQAwCdASoQABUAPwFqrE6rJiQiMAgBYCAJYwC7ABbywaE6VmtrlMAA/o03vckuevxm+q71o7up8r3be+A0Iue9Vc4lC3faT7/c1H+X/RJY0iJ+2UCCNOmC9yVbqu877YC/MjC+fDI6phfzM7fXZa+tBeGA//AA"
     },
     {
-      "src": "/fotos/royal/royal-10.webp",
+      "src": "/fotos/boulevard/boulevard-10.webp",
       "largura": 1200,
       "altura": 1600,
       "blur": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAwBACdASoQABUAPwForE8rJaQiMAgBYCAJaACdMoACO4b9uxSC7ITrLCgA+LS6p48ER3VwT55e/3sFOWUiWP5cL9+7xmVbF2Bb2jjDNLfvowgnrbKjMM5yQsSbIATkRiW/I1RtxWHda0dmJAa8Zcum4NbrKJtUQOmgwFuHZBAAAA=="
     },
     {
-      "src": "/fotos/royal/royal-11.webp",
+      "src": "/fotos/boulevard/boulevard-11.webp",
       "largura": 1200,
       "altura": 1600,
       "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAACwAwCdASoQABUAPwFqrE6rJiQiMAgBYCAJQAAINTyMrYk0AH+sAAD+jTe7jVxVMI0mZ0YUW6ieWtuVp3p6nm1f4bSJj2V4TbH3w0By8PcKwieNbx7c3sKSVTnj65oqF9nmWOnRAAA="
     },
     {
-      "src": "/fotos/royal/royal-12.webp",
+      "src": "/fotos/boulevard/boulevard-12.webp",
       "largura": 1200,
       "altura": 1600,
       "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABwBACdASoQABUAPwFqrU8rJaQiMAgBYCAJYgC7MoADDXOsjmg+oVamFlNJ6ADNx6g9ElBWkbOY066TzdeHwS/cVeQzC1XDV5zRBKFooQShg/QYNmNQIJG6RTuLD6rx1WjA6vAnfisz58RiA2DAAA=="
     },
     {
-      "src": "/fotos/royal/royal-13.webp",
+      "src": "/fotos/boulevard/boulevard-13.webp",
       "largura": 1200,
       "altura": 1600,
       "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACwAwCdASoQABUAPwFqrE8rJaQiMAgBYCAJYwCdAB3d/ehT/bmfqAD6hFg1rearMuiF9yaZwas6nSXVAszjZPt8mAHy38i6fs6TXW1p88oX775e10+vOy1MLGgWD4AoBEKwBunW6U4mg5+3xwdcy4BKWmQAAAAA"
     },
     {
-      "src": "/fotos/royal/royal-14.webp",
+      "src": "/fotos/boulevard/boulevard-14.webp",
       "largura": 1200,
       "altura": 1600,
       "blur": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAQBACdASoQABUAPwFwsE6rJyUiMAgBYCAJaACdMoAJC/jd2PCLT5hMAAD90gVhTtlQBut+2fWgnBpox47BQDMzry2bo8MmNmfBodTYpCI5XXlAWgUhbxopz9qteae5eW0jUDdvy4GQ19aq6H1MWT+oA924s8toEGegnfGS6YGh1PpqlzL3AhEhOiwUYgAA"

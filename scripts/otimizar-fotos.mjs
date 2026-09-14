@@ -8,7 +8,7 @@ const MANIFESTO = path.resolve('src/data/fotos.json');
 
 // Seleção curada por prédio: número exibido no contact sheet (1-indexado, ordem alfabética)
 const SELECAO = {
-  Royal:   [21, 19, 30, 32, 23, 5, 9, 10, 13, 16, 26, 34, 12, 43],
+  Boulevard: [21, 19, 30, 32, 23, 5, 9, 10, 13, 16, 26, 34, 12, 43],
   Flavan:  [3, 16, 28, 13, 10, 18, 23, 29, 31, 24],
   Soho:    [10, 16, 2, 7, 11, 3, 9, 1, 13, 12],
   VP:      [1, 3, 5, 4, 7, 9, 16, 22, 21, 24, 20, 23],

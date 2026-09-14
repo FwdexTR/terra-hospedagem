@@ -12,9 +12,9 @@ import { Rodape } from "@/components/Rodape";
 import { predioPorSlug } from "@/data/predios";
 
 export default function Pagina() {
-  // O café da manhã no terraço é do Royal. Aparece na home por ser o melhor
+  // O café da manhã no rooftop é do Boulevard. Aparece na home por ser o melhor
   // visual da rede, mas sempre rotulado e com link para a página certa.
-  const royal = predioPorSlug("royal");
+  const boulevard = predioPorSlug("boulevard");
 
   return (
     <Movimento>
@@ -22,11 +22,11 @@ export default function Pagina() {
       <main className="flex-1">
         <Hero />
         <Predios />
-        {royal?.areaComum && (
+        {boulevard?.areaComum && (
           <AreaComumSecao
-            area={royal.areaComum}
-            nomePredio={royal.nome}
-            href={`/${royal.slug}`}
+            area={boulevard.areaComum}
+            nomePredio={boulevard.nome}
+            href={`/${boulevard.slug}`}
           />
         )}
         <Incluso />

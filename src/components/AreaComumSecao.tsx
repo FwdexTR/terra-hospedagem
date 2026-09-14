@@ -12,7 +12,7 @@ import { useMontado } from "@/lib/useMontado";
 import type { AreaComum } from "@/data/predios";
 
 /**
- * Área comum de um prédio: rooftop com café da manhã no Royal, lazer no Via
+ * Área comum de um prédio: rooftop com café da manhã no Boulevard, lazer no Via
  * Park. Recebe o conteúdo por prop porque cada unidade tem a sua — e prédios
  * sem área comum simplesmente não renderizam esta seção.
  */

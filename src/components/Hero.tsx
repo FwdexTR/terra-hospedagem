@@ -58,7 +58,7 @@ export function Hero() {
         {capa && (
           <Image
             src={capa.src}
-            alt="Pôr do sol visto do terraço da Terra Hospedagem, com mesa posta para o café da manhã"
+            alt="Pôr do sol visto do rooftop da Terra Hospedagem, com mesa posta para o café da manhã"
             fill
             priority
             sizes="100vw"
