@@ -7,22 +7,52 @@ export type Foto = {
   blur: string;
 };
 
+/** Nome de um ícone do lucide-react, resolvido em `src/lib/icones.ts`. */
+export type NomeIcone =
+  | "coffee"
+  | "sunset"
+  | "utensils"
+  | "waves"
+  | "dumbbell"
+  | "flame"
+  | "concierge"
+  | "briefcase";
+
+export type ItemAreaComum = {
+  icone: NomeIcone;
+  titulo: string;
+  texto: string;
+};
+
+/**
+ * Área comum de um prédio. Só existe onde de fato existe: o rooftop com café da
+ * manhã é exclusivo do Royal, o lazer é exclusivo do Via Park, e o Flavan não
+ * tem área comum. Atribuir isso errado faria o site prometer o que a unidade
+ * não entrega.
+ */
+export type AreaComum = {
+  rotulo: string;
+  titulo: string;
+  destaque: string;
+  texto: string;
+  itens: ItemAreaComum[];
+  fotos: Foto[];
+};
+
 export type Predio = {
   slug: string;
   nome: string;
   subtitulo: string;
-  /** Frase curta usada no card e no topo da galeria */
   chamada: string;
   descricao: string;
-  /** Preencher com o endereço real — enquanto estiver null o site mostra só a cidade */
+  /** Preencher com o endereço real — enquanto for null o site mostra só a cidade */
   endereco: string | null;
   bairro: string | null;
   perfil: string;
   destaques: string[];
   comodidades: string[];
   fotos: Foto[];
-  /** Foto usada como capa do card */
-  capa: Foto;
+  areaComum: AreaComum | null;
 };
 
 const galeria = fotos as Record<string, Foto[]>;
@@ -35,7 +65,7 @@ export const PREDIOS: Predio[] = [
     slug: "royal",
     nome: "Royal",
     subtitulo: "Apartamentos amplos",
-    chamada: "O mais espaçoso da rede",
+    chamada: "O mais espaçoso, com café da manhã no terraço",
     descricao:
       "Apartamentos de um e dois quartos com sala separada, varanda e vista aberta da cidade. Acabamento recente, porcelanato em todos os ambientes e banheiros revestidos em mármore. A cozinha tem fogão, geladeira, micro-ondas e cafeteira, e a área de serviço vem com máquina de lavar — dá para morar meses sem sentir falta de nada.",
     endereco: null,
@@ -56,7 +86,34 @@ export const PREDIOS: Predio[] = [
       "Enxoval incluso",
     ],
     fotos: galeria.royal ?? [],
-    capa: (galeria.royal ?? [])[0],
+    areaComum: {
+      rotulo: "Exclusivo do Royal",
+      titulo: "O dia começa no",
+      destaque: "terraço",
+      texto:
+        "Na cobertura do Royal tem um rooftop com vista aberta para a cidade, onde o café da manhã é servido todos os dias. No fim da tarde, o mesmo espaço vira o melhor lugar do prédio para sentar e ver o sol se pôr.",
+      itens: [
+        {
+          icone: "coffee",
+          titulo: "Café da manhã servido",
+          texto:
+            "Buffet montado toda manhã com pães, frios, frutas, bolos e café fresco. Já está na diária.",
+        },
+        {
+          icone: "sunset",
+          titulo: "Vista aberta da cidade",
+          texto:
+            "O terraço fica na cobertura, de frente para o pôr do sol. É o melhor fim de tarde do prédio.",
+        },
+        {
+          icone: "utensils",
+          titulo: "Espaço para receber",
+          texto:
+            "Mesas grandes, área coberta e guarda-sóis. Serve tanto para uma reunião rápida quanto para reunir a família.",
+        },
+      ],
+      fotos: galeria.rooftop ?? [],
+    },
   },
   {
     slug: "via-park",
@@ -64,7 +121,7 @@ export const PREDIOS: Predio[] = [
     subtitulo: "Flat Service",
     chamada: "Piscina, academia e sauna",
     descricao:
-      "O prédio com a área de lazer mais completa da rede: piscina adulto e infantil, academia equipada com esteiras e estação de musculação, e sauna. Os apartamentos têm varanda com vista, sala de estar, cozinha equipada e escrivaninha para quem precisa trabalhar hospedado.",
+      "O prédio com a área de lazer mais completa da rede. Os apartamentos têm varanda com vista, sala de estar, cozinha equipada e escrivaninha para quem precisa trabalhar hospedado.",
     endereco: null,
     bairro: null,
     perfil: "Estadias longas, executivos e quem quer estrutura de lazer",
@@ -83,7 +140,34 @@ export const PREDIOS: Predio[] = [
       "Recepção",
     ],
     fotos: galeria.vp ?? [],
-    capa: (galeria.vp ?? [])[0],
+    areaComum: {
+      rotulo: "Exclusivo do Via Park",
+      titulo: "Lazer completo",
+      destaque: "no prédio",
+      texto:
+        "É a unidade com a melhor estrutura da rede. Piscina adulto e infantil com área de sol, academia equipada com esteiras e estação de musculação, e sauna — tudo dentro do prédio, sem precisar sair para treinar ou relaxar.",
+      itens: [
+        {
+          icone: "waves",
+          titulo: "Piscina adulto e infantil",
+          texto:
+            "Área externa com espreguiçadeiras e jardim, boa tanto para quem viaja com crianças quanto para o fim do expediente.",
+        },
+        {
+          icone: "dumbbell",
+          titulo: "Academia equipada",
+          texto:
+            "Esteiras, bicicletas e estação de musculação, com sala espelhada e vista para a área da piscina.",
+        },
+        {
+          icone: "flame",
+          titulo: "Sauna",
+          texto:
+            "Para quem fica semanas hospedado, é o tipo de estrutura que faz diferença na rotina.",
+        },
+      ],
+      fotos: (galeria.vp ?? []).slice(1, 7),
+    },
   },
   {
     slug: "soho",
@@ -110,7 +194,7 @@ export const PREDIOS: Predio[] = [
       "Enxoval incluso",
     ],
     fotos: galeria.soho ?? [],
-    capa: (galeria.soho ?? [])[0],
+    areaComum: null,
   },
   {
     slug: "flavan",
@@ -137,18 +221,18 @@ export const PREDIOS: Predio[] = [
       "Box blindex",
     ],
     fotos: galeria.flavan ?? [],
-    capa: (galeria.flavan ?? [])[0],
+    areaComum: null,
   },
 ];
 
-/** Fotos do rooftop e do café da manhã — área comum, usada em seção própria */
+/** Fotos do terraço do Royal — usadas também como capa da home. */
 export const ROOFTOP: Foto[] = galeria.rooftop ?? [];
-
-export const TODAS_AS_FOTOS: Foto[] = [
-  ...ROOFTOP,
-  ...PREDIOS.flatMap((p) => p.fotos),
-];
 
 export function predioPorSlug(slug: string): Predio | undefined {
   return PREDIOS.find((p) => p.slug === slug);
+}
+
+/** Os outros três prédios, para a navegação no rodapé de cada página. */
+export function outrosPredios(slug: string): Predio[] {
+  return PREDIOS.filter((p) => p.slug !== slug);
 }

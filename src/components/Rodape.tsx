@@ -1,13 +1,14 @@
+import Link from "next/link";
 import { Logo } from "./Logo";
 import { CONTATO, WHATSAPP_EXIBICAO, linkZap, MENSAGENS } from "@/lib/contato";
 import { PREDIOS } from "@/data/predios";
 
 const NAVEGACAO = [
-  { href: "#predios", texto: "Prédios" },
-  { href: "#rooftop", texto: "Café da manhã" },
-  { href: "#incluso", texto: "O que está incluso" },
-  { href: "#empresas", texto: "Para empresas" },
-  { href: "#contato", texto: "Contato" },
+  { href: "/#predios", texto: "Prédios" },
+  { href: "/royal", texto: "Café da manhã" },
+  { href: "/#incluso", texto: "O que está incluso" },
+  { href: "/#empresas", texto: "Para empresas" },
+  { href: "/#contato", texto: "Contato" },
 ];
 
 export function Rodape() {
@@ -73,14 +74,12 @@ export function Rodape() {
             <ul className="mt-4 space-y-2.5">
               {PREDIOS.map((p) => (
                 <li key={p.slug}>
-                  <a
-                    href={linkZap(MENSAGENS.predio(p.nome))}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href={`/${p.slug}`}
                     className="text-[0.9rem] text-texto-suave transition-colors hover:text-destaque"
                   >
                     {p.nome}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

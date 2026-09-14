@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
@@ -9,11 +10,11 @@ import { MENSAGENS } from "@/lib/contato";
 import { cn } from "@/lib/utils";
 
 const LINKS = [
-  { href: "#predios", texto: "Prédios" },
-  { href: "#rooftop", texto: "Café da manhã" },
-  { href: "#incluso", texto: "O que está incluso" },
-  { href: "#empresas", texto: "Para empresas" },
-  { href: "#contato", texto: "Contato" },
+  { href: "/#predios", texto: "Prédios" },
+  { href: "/royal", texto: "Café da manhã" },
+  { href: "/#incluso", texto: "O que está incluso" },
+  { href: "/#empresas", texto: "Para empresas" },
+  { href: "/#contato", texto: "Contato" },
 ];
 
 export function Cabecalho() {
@@ -54,9 +55,9 @@ export function Cabecalho() {
         )}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 sm:px-8">
-          <a href="#topo" aria-label="Terra Hospedagem — início">
+          <Link href="/" aria-label="Terra Hospedagem — início">
             <Logo />
-          </a>
+          </Link>
 
           <nav className="hidden items-center gap-8 lg:flex">
             {LINKS.map((link) => (

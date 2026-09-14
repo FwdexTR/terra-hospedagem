@@ -21,6 +21,18 @@ npm run dev
 | Perguntas frequentes | `src/components/Faq.tsx` |
 | Itens inclusos | `src/components/Incluso.tsx` |
 
+## Estrutura
+
+- `/` — vitrine da rede: hero, os quatro prédios, café da manhã do Royal
+  (rotulado e com link), o que está incluso, empresas, FAQ e contato.
+- `/royal`, `/via-park`, `/soho`, `/flavan` — uma página por prédio, geradas
+  estaticamente a partir de `PREDIOS` em `src/data/predios.ts`.
+
+Cada página mostra **apenas** o que é daquela unidade. A área comum vive em
+`predio.areaComum` e é `null` onde não existe, então a seção simplesmente não
+renderiza — foi assim que se resolveu a confusão de o rooftop do Royal aparecer
+embaixo do Via Park.
+
 ## Marca
 
 Cores oficiais do brandbook (2025), em `src/app/marca.css`:
@@ -58,11 +70,9 @@ endereço:
 
 O único endereço conhecido veio da fachada fotografada do Via Park: **424**.
 
-Também falta confirmar:
-
-- A qual prédio pertence o rooftop com café da manhã. As fotos da pasta do
-  rooftop incluem um apartamento idêntico ao do Royal, então a seção foi escrita
-  como área comum da rede — se for exclusivo de um prédio, o texto precisa mudar.
+Áreas comuns já confirmadas pelo cliente: o rooftop com café da manhã é
+exclusivo do **Royal**, o lazer (piscina, academia, sauna) é exclusivo do
+**Via Park**, e **Flavan** e **Soho** não têm área comum.
 
 ## Fotos
 

@@ -6,7 +6,7 @@ import { MessageCircle, Phone } from "lucide-react";
 import { Revelar } from "./Revelar";
 import { LinkZap } from "./BotaoZap";
 import { CONTATO, MENSAGENS, WHATSAPP_EXIBICAO } from "@/lib/contato";
-import { ROOFTOP } from "@/data/predios";
+import { ROOFTOP, type Foto } from "@/data/predios";
 
 const ATALHOS = [
   {
@@ -26,9 +26,11 @@ const ATALHOS = [
   },
 ];
 
-export function Contato() {
-  // Foto do fim de tarde no terraço — fecha o site no mesmo tom em que abriu
-  const fundo = ROOFTOP[1] ?? ROOFTOP[0];
+export function Contato({ fundo: fundoPredio }: { fundo?: Foto }) {
+  // Nas páginas de prédio o fundo vem da própria unidade; na home fica o
+  // terraço. Usar o terraço em toda página faria o Soho e o Flavan parecerem
+  // ter rooftop, que é exclusivo do Royal.
+  const fundo = fundoPredio ?? ROOFTOP[1] ?? ROOFTOP[0];
 
   return (
     <section
