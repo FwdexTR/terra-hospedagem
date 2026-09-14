@@ -88,5 +88,18 @@ por número da foto dentro de cada pasta (ordem alfabética).
 
 ## Publicar
 
-Site estático, sem back-end. Na Vercel, definir `NEXT_PUBLIC_SITE_URL` com o
-domínio final para que a prévia de compartilhamento do WhatsApp use a URL certa.
+Site estático, sem back-end.
+
+Repositório: `FwdexTR/terra-hospedagem` (privado)
+Projeto Vercel: `terra-hospedagem` (time `fwdextrs-projects`)
+
+O deploy é automático: **todo push na `main` publica em produção**.
+
+```bash
+git push
+```
+
+Quando o domínio definitivo existir, apontar `terrahospedagem.com.br` para o
+projeto na Vercel e definir a variável `NEXT_PUBLIC_SITE_URL` com ele — é o que
+o Next usa para montar as URLs absolutas da prévia de compartilhamento no
+WhatsApp.
