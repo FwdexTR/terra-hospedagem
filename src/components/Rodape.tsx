@@ -14,7 +14,7 @@ export function Rodape() {
   const ano = new Date().getFullYear();
 
   return (
-    <footer className="relative overflow-hidden border-t border-borda bg-[var(--terra-850)]">
+    <footer className="relative overflow-hidden border-t border-borda bg-[var(--azul-900)]">
       {/* Faixa deslizante com os nomes dos prédios */}
       <div className="flex overflow-hidden border-b border-borda py-5">
         <div className="marquee flex shrink-0 items-center gap-10 whitespace-nowrap pr-10">

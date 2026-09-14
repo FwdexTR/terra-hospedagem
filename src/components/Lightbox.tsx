@@ -61,7 +61,7 @@ export function Lightbox({ fotos, indice, aoFechar, aoTrocar, legenda }: Props) 
           exit={{ opacity: 0 }}
           transition={{ duration: 0.22 }}
           onClick={aoFechar}
-          className="fixed inset-0 z-[60] flex flex-col bg-[var(--terra-900)]/96 backdrop-blur-md"
+          className="fixed inset-0 z-[60] flex flex-col bg-[var(--azul-950)]/96 backdrop-blur-md"
         >
           {/* Barra superior */}
           <div className="flex shrink-0 items-center justify-between px-5 py-4 sm:px-8">
@@ -109,7 +109,7 @@ export function Lightbox({ fotos, indice, aoFechar, aoTrocar, legenda }: Props) 
               type="button"
               onClick={anterior}
               aria-label="Foto anterior"
-              className="absolute left-1 flex h-12 w-12 items-center justify-center rounded-full border border-borda-forte bg-[var(--terra-900)]/70 text-texto backdrop-blur transition-colors hover:border-destaque hover:text-destaque sm:left-3"
+              className="absolute left-1 flex h-12 w-12 items-center justify-center rounded-full border border-borda-forte bg-[var(--azul-950)]/70 text-texto backdrop-blur transition-colors hover:border-destaque hover:text-destaque sm:left-3"
             >
               <ChevronLeft className="h-6 w-6" />
             </button>
@@ -117,7 +117,7 @@ export function Lightbox({ fotos, indice, aoFechar, aoTrocar, legenda }: Props) 
               type="button"
               onClick={proxima}
               aria-label="Próxima foto"
-              className="absolute right-1 flex h-12 w-12 items-center justify-center rounded-full border border-borda-forte bg-[var(--terra-900)]/70 text-texto backdrop-blur transition-colors hover:border-destaque hover:text-destaque sm:right-3"
+              className="absolute right-1 flex h-12 w-12 items-center justify-center rounded-full border border-borda-forte bg-[var(--azul-950)]/70 text-texto backdrop-blur transition-colors hover:border-destaque hover:text-destaque sm:right-3"
             >
               <ChevronRight className="h-6 w-6" />
             </button>

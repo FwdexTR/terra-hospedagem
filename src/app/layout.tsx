@@ -1,20 +1,21 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { CIDADE, ESTADO } from "@/data/predios";
 import { WHATSAPP_EXIBICAO } from "@/lib/contato";
 
-const corpo = Inter({
+/**
+ * A tipografia do brandbook é a ITC Avant Garde Gothic Pro (Book, Medium,
+ * Bold), que é licenciada e não pode ser servida na web sem licença própria.
+ * Poppins é a substituta livre mais próxima: mesma construção geométrica,
+ * bojos circulares e altura de x grande. Se a Terra licenciar a original,
+ * basta trocar a família aqui.
+ */
+const poppins = Poppins({
   variable: "--fonte-corpo",
   subsets: ["latin"],
   display: "swap",
-});
-
-const titulo = Fraunces({
-  variable: "--fonte-titulo",
-  subsets: ["latin"],
-  display: "swap",
-  axes: ["SOFT", "WONK", "opsz"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const DESCRICAO =
@@ -67,7 +68,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0c1210",
+  themeColor: "#001529",
   colorScheme: "dark",
 };
 
@@ -103,7 +104,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="pt-BR"
-      className={`${corpo.variable} ${titulo.variable} h-full antialiased`}
+      className={`${poppins.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
         <script

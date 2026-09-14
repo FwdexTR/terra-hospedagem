@@ -47,7 +47,7 @@ export function Contato() {
             blurDataURL={fundo.blur}
             className="z-0 object-cover object-center"
           />
-          <div className="absolute inset-0 z-[1] bg-[var(--terra-900)]/88" />
+          <div className="absolute inset-0 z-[1] bg-[var(--azul-950)]/88" />
         </>
       )}
 
@@ -69,7 +69,7 @@ export function Contato() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             <LinkZap
               mensagem={MENSAGENS.geral}
-              variante="zap"
+              variante="solido"
               className="px-9 py-4 text-base"
             >
               {WHATSAPP_EXIBICAO}
@@ -94,7 +94,7 @@ export function Contato() {
                 rel="noopener noreferrer"
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.25 }}
-                className="flex h-full flex-col items-center gap-2 rounded-2xl border border-borda bg-[var(--terra-850)]/80 px-5 py-6 backdrop-blur transition-colors hover:border-destaque"
+                className="flex h-full flex-col items-center gap-2 rounded-2xl border border-borda bg-[var(--azul-900)]/80 px-5 py-6 backdrop-blur transition-colors hover:border-destaque"
               >
                 <MessageCircle className="h-5 w-5 text-destaque" />
                 <span className="mt-1 font-semibold text-texto">

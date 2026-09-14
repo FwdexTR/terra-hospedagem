@@ -100,7 +100,7 @@ export function Cabecalho() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 z-50 bg-[var(--terra-900)] lg:hidden"
+            className="fixed inset-0 z-50 bg-[var(--azul-950)] lg:hidden"
           >
             <div className="flex items-center justify-between px-5 py-5 sm:px-8">
               <Logo />
@@ -133,7 +133,7 @@ export function Cabecalho() {
             <div className="px-5 pt-9 sm:px-8">
               <LinkZap
                 mensagem={MENSAGENS.reserva}
-                variante="zap"
+                variante="solido"
                 className="w-full py-4 text-base"
               >
                 Reservar pelo WhatsApp

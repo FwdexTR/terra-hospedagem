@@ -83,7 +83,7 @@ export function LinkZap({
 }) {
   const estilos = {
     solido:
-      "bg-destaque text-[var(--terra-900)] hover:bg-destaque-claro shadow-[0_8px_28px_-10px_var(--ouro-500)]",
+      "bg-destaque text-[var(--chumbo)] hover:bg-destaque-claro shadow-[0_8px_28px_-10px_var(--laranja)]",
     contorno:
       "border border-borda-forte text-texto hover:border-destaque hover:text-destaque",
     zap: "bg-[var(--zap)] text-[#06281a] hover:brightness-110 shadow-[0_8px_28px_-10px_rgba(37,211,102,0.7)]",
@@ -102,7 +102,9 @@ export function LinkZap({
         className,
       )}
     >
-      {variante === "zap" && <IconeZap className="h-[1.15rem] w-[1.15rem]" />}
+      {variante !== "contorno" && (
+        <IconeZap className="h-[1.15rem] w-[1.15rem]" />
+      )}
       {children}
     </a>
   );

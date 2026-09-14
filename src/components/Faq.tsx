@@ -111,11 +111,11 @@ export function Faq() {
         </div>
 
         <Revelar atraso={0.1}>
-          <div className="mt-10 flex flex-col items-center gap-4 rounded-2xl border border-borda bg-[var(--terra-850)] px-6 py-8 text-center">
+          <div className="mt-10 flex flex-col items-center gap-4 rounded-2xl border border-borda bg-[var(--azul-900)] px-6 py-8 text-center">
             <p className="text-texto-suave">
               Ficou alguma dúvida que não está aqui?
             </p>
-            <LinkZap mensagem={MENSAGENS.geral} variante="zap">
+            <LinkZap mensagem={MENSAGENS.geral} variante="solido">
               Perguntar no WhatsApp
             </LinkZap>
           </div>

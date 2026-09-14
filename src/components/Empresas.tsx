@@ -41,7 +41,7 @@ export function Empresas() {
   return (
     <section
       id="empresas"
-      className="grao relative scroll-mt-24 overflow-hidden border-y border-borda bg-[var(--terra-850)] py-24 sm:py-32"
+      className="grao relative scroll-mt-24 overflow-hidden border-y border-borda bg-[var(--azul-900)] py-24 sm:py-32"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-center lg:gap-16">
@@ -58,7 +58,7 @@ export function Empresas() {
                   className="object-cover"
                 />
               )}
-              <div className="absolute inset-0 bg-gradient-to-t from-[var(--terra-900)]/55 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[var(--azul-950)]/55 to-transparent" />
             </div>
           </Revelar>
 

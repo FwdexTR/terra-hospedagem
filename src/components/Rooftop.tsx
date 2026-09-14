@@ -54,7 +54,7 @@ export function Rooftop() {
     <section
       ref={referencia}
       id="rooftop"
-      className="grao relative scroll-mt-24 overflow-hidden border-y border-borda bg-[var(--terra-850)] py-24 sm:py-32"
+      className="grao relative scroll-mt-24 overflow-hidden border-y border-borda bg-[var(--azul-900)] py-24 sm:py-32"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">

@@ -70,8 +70,8 @@ export function Hero() {
       </motion.div>
 
       {/* Camadas de escurecimento — garantem contraste do texto sobre a foto */}
-      <div className="absolute inset-0 z-[1] bg-gradient-to-t from-[var(--terra-900)] via-[var(--terra-900)]/55 to-[var(--terra-900)]/15" />
-      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-[var(--terra-900)]/80 via-[var(--terra-900)]/15 to-transparent" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-t from-[var(--azul-950)] via-[var(--azul-950)]/70 to-[var(--azul-950)]/25" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-[var(--azul-950)]/90 via-[var(--azul-950)]/35 to-transparent" />
 
       <motion.div
         style={montado ? { opacity: opacidadeConteudo } : undefined}
@@ -81,13 +81,13 @@ export function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="mb-6 inline-flex items-center gap-2 rounded-full border border-borda-forte bg-[var(--terra-900)]/60 px-4 py-1.5 text-[0.7rem] font-medium uppercase tracking-[0.18em] text-areia-200 backdrop-blur-sm"
+          className="mb-6 inline-flex items-center gap-2 rounded-full border border-borda-forte bg-[var(--azul-950)]/60 px-4 py-1.5 text-[0.7rem] font-medium uppercase tracking-[0.18em] text-off-white backdrop-blur-sm"
         >
           <MapPin className="h-3.5 w-3.5 text-destaque" />
           {CIDADE} · {ESTADO}
         </motion.p>
 
-        <h1 className="titulo max-w-4xl text-[clamp(2.15rem,7.6vw,5.6rem)] text-texto">
+        <h1 className="titulo max-w-4xl text-[clamp(2.1rem,6.6vw,4.6rem)] text-texto">
           <RevelarPalavras texto="Um apartamento pronto" atraso={0.15} />
           <br />
           <span className="text-destaque">
@@ -99,7 +99,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.85 }}
-          className="mt-5 max-w-xl text-[0.95rem] leading-relaxed text-texto-suave sm:mt-7 sm:text-lg"
+          className="mt-5 max-w-xl text-[0.95rem] leading-relaxed text-off-white/90 sm:mt-7 sm:text-lg"
         >
           Quatro prédios em {CIDADE} com apartamentos mobiliados, cozinha
           equipada e enxoval incluso. Você chega com a mala e já está em casa —
@@ -112,7 +112,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 1 }}
           className="mt-7 flex flex-wrap items-center gap-3 sm:mt-9"
         >
-          <LinkZap mensagem={MENSAGENS.reserva} variante="zap" className="px-8 py-4">
+          <LinkZap mensagem={MENSAGENS.reserva} variante="solido" className="px-8 py-4">
             Consultar disponibilidade
           </LinkZap>
           <a
@@ -133,7 +133,7 @@ export function Hero() {
           {NUMEROS.map((item) => (
             <div
               key={item.rotulo}
-              className="bg-[var(--terra-900)]/55 px-3 py-3.5 backdrop-blur-sm sm:px-5 sm:py-4"
+              className="bg-[var(--azul-950)]/55 px-3 py-3.5 backdrop-blur-sm sm:px-5 sm:py-4"
             >
               <dt className="titulo text-lg text-destaque sm:text-[1.7rem]">
                 {item.valor}

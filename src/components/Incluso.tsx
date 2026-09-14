@@ -81,12 +81,12 @@ export function Incluso() {
             <Revelar key={item.titulo} atraso={0.04 * i}>
               <article
                 className={cn(
-                  "group h-full rounded-2xl border border-borda bg-[var(--terra-850)] p-6",
+                  "group h-full rounded-2xl border border-borda bg-[var(--azul-900)] p-6",
                   "transition-all duration-500 hover:-translate-y-1 hover:border-borda-forte",
                   item.largo && "lg:col-span-2",
                 )}
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl border border-borda-forte text-destaque transition-colors duration-500 group-hover:bg-destaque group-hover:text-[var(--terra-900)]">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl border border-borda-forte text-destaque transition-colors duration-500 group-hover:bg-destaque group-hover:text-[var(--azul-950)]">
                   <item.Icone className="h-[1.15rem] w-[1.15rem]" />
                 </span>
                 <h3 className="mt-5 font-semibold text-texto">{item.titulo}</h3>

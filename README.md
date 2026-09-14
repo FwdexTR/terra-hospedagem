@@ -21,6 +21,33 @@ npm run dev
 | Perguntas frequentes | `src/components/Faq.tsx` |
 | Itens inclusos | `src/components/Incluso.tsx` |
 
+## Marca
+
+Cores oficiais do brandbook (2025), em `src/app/marca.css`:
+
+| Cor | Hex | Uso no site |
+|---|---|---|
+| Laranja | `#FF6700` | Destaques, CTAs, ícones |
+| Azul | `#004E98` | Cor institucional; o fundo usa uma escala derivada dela |
+| Off White | `#F4F4F4` | Texto |
+| Chumbo | `#1A1A1A` | Texto sobre laranja |
+
+O fundo escuro (`--azul-950` … `--azul-800`) é uma escala derivada do azul da
+marca: mesmo matiz (hsl 209 100%), só variando a luminosidade.
+
+**Contraste**: texto sobre laranja usa chumbo, não branco — branco sobre
+`#FF6700` dá 2,65:1 e reprova no WCAG; chumbo dá 5,96:1.
+
+**Logo**: o símbolo foi redesenhado em vetor a partir do brandbook, em
+`src/components/Logo.tsx`. Se o designer tiver o arquivo vetorial original
+(AI/EPS/SVG), vale substituir pelo oficial.
+
+**Tipografia**: a do brandbook é ITC Avant Garde Gothic Pro, que é licenciada e
+não pode ser servida na web sem licença própria. O site usa **Poppins**, a
+substituta livre mais próxima (mesma construção geométrica, bojos circulares,
+altura de x grande). Para trocar pela original depois de licenciada, mexer só
+em `src/app/layout.tsx`.
+
 ## Pendências de conteúdo
 
 Estes campos estão como `null` em `src/data/predios.ts` porque não foram
@@ -36,8 +63,6 @@ Também falta confirmar:
 - A qual prédio pertence o rooftop com café da manhã. As fotos da pasta do
   rooftop incluem um apartamento idêntico ao do Royal, então a seção foi escrita
   como área comum da rede — se for exclusivo de um prédio, o texto precisa mudar.
-- Cores oficiais (aguardando o brand book) — trocar em `src/app/marca.css`.
-- Logo oficial — hoje há um monograma provisório em `src/components/Logo.tsx`.
 
 ## Fotos
 

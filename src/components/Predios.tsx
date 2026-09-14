@@ -54,7 +54,7 @@ export function Predios() {
                   className={cn(
                     "relative shrink-0 rounded-full px-6 py-3 text-sm font-medium transition-colors duration-300",
                     selecionado
-                      ? "text-[var(--terra-900)]"
+                      ? "text-[var(--azul-950)]"
                       : "border border-borda text-texto-suave hover:border-borda-forte hover:text-texto",
                   )}
                 >
@@ -123,8 +123,8 @@ function GaleriaPredio({
           blurDataURL={principal.blur}
           className="object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
         />
-        <span className="absolute inset-0 bg-gradient-to-t from-[var(--terra-900)]/70 via-transparent to-transparent" />
-        <span className="absolute bottom-4 left-4 flex items-center gap-2 rounded-full bg-[var(--terra-900)]/75 px-4 py-2 text-[0.72rem] font-medium tracking-wide text-areia-100 backdrop-blur">
+        <span className="absolute inset-0 bg-gradient-to-t from-[var(--azul-950)]/70 via-transparent to-transparent" />
+        <span className="absolute bottom-4 left-4 flex items-center gap-2 rounded-full bg-[var(--azul-950)]/75 px-4 py-2 text-[0.72rem] font-medium tracking-wide text-off-white backdrop-blur">
           <Expand className="h-3.5 w-3.5 text-destaque" />
           Ver as {predio.fotos.length} fotos
         </span>
@@ -148,7 +148,7 @@ function GaleriaPredio({
               blurDataURL={foto.blur}
               className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-110"
             />
-            <span className="absolute inset-0 bg-[var(--terra-900)]/25 transition-opacity duration-500 group-hover:opacity-0" />
+            <span className="absolute inset-0 bg-[var(--azul-950)]/25 transition-opacity duration-500 group-hover:opacity-0" />
           </button>
         ))}
 
@@ -170,7 +170,7 @@ function GaleriaPredio({
 
 function FichaPredio({ predio }: { predio: Predio }) {
   return (
-    <div className="flex flex-col rounded-2xl border border-borda bg-[var(--terra-850)] p-7">
+    <div className="flex flex-col rounded-2xl border border-borda bg-[var(--azul-900)] p-7">
       <p className="eyebrow">{predio.subtitulo}</p>
       <h3 className="titulo mt-3 text-[2rem] text-texto">{predio.nome}</h3>
       <p className="mt-1.5 text-sm font-medium text-destaque">{predio.chamada}</p>
@@ -213,7 +213,7 @@ function FichaPredio({ predio }: { predio: Predio }) {
 
       <LinkZap
         mensagem={MENSAGENS.predio(predio.nome)}
-        variante="zap"
+        variante="solido"
         className="mt-6 w-full py-3.5"
       >
         Consultar o {predio.nome}
