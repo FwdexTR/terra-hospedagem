@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Terra Hospedagem
 
-## Getting Started
+Site institucional da Terra Hospedagem — apartamentos mobiliados em Campos dos
+Goytacazes (RJ) para diária, temporada e hospedagem corporativa.
 
-First, run the development server:
+Next.js 16 · React 19 · Tailwind 4 · Motion
+
+## Rodar
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Onde mexer em cada coisa
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| O que | Arquivo |
+|---|---|
+| Cores da marca | `src/app/marca.css` |
+| Telefone e mensagens do WhatsApp | `src/lib/contato.ts` |
+| Textos e dados dos prédios | `src/data/predios.ts` |
+| Perguntas frequentes | `src/components/Faq.tsx` |
+| Itens inclusos | `src/components/Incluso.tsx` |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Pendências de conteúdo
 
-## Learn More
+Estes campos estão como `null` em `src/data/predios.ts` porque não foram
+informados. Enquanto estiverem assim, o site mostra apenas a cidade no lugar do
+endereço:
 
-To learn more about Next.js, take a look at the following resources:
+- `endereco` e `bairro` dos quatro prédios
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O único endereço conhecido veio da fachada fotografada do Via Park: **424**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Também falta confirmar:
 
-## Deploy on Vercel
+- A qual prédio pertence o rooftop com café da manhã. As fotos da pasta do
+  rooftop incluem um apartamento idêntico ao do Royal, então a seção foi escrita
+  como área comum da rede — se for exclusivo de um prédio, o texto precisa mudar.
+- Cores oficiais (aguardando o brand book) — trocar em `src/app/marca.css`.
+- Logo oficial — hoje há um monograma provisório em `src/components/Logo.tsx`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Fotos
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+As fotos originais ficam em `_fotos-origem/` (fora do git). Para regerar as
+versões otimizadas em `public/fotos/` e o manifesto `src/data/fotos.json`:
+
+```bash
+node scripts/otimizar-fotos.mjs
+```
+
+A seleção de quais fotos entram no site está no objeto `SELECAO` desse script,
+por número da foto dentro de cada pasta (ordem alfabética).
+
+## Publicar
+
+Site estático, sem back-end. Na Vercel, definir `NEXT_PUBLIC_SITE_URL` com o
+domínio final para que a prévia de compartilhamento do WhatsApp use a URL certa.

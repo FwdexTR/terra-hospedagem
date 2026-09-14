@@ -1,0 +1,45 @@
+/* =========================================================================
+   TERRA HOSPEDAGEM — tokens da marca
+   Único arquivo com cores. Trocar aqui atualiza o site inteiro.
+   Substituir pelos valores do brand book quando disponível.
+   ========================================================================= */
+
+:root {
+  /* Base — verde-terra profundo */
+  --terra-900: #0c1210;
+  --terra-850: #111916;
+  --terra-800: #16201c;
+  --terra-700: #1e2b26;
+  --terra-600: #2a3a33;
+
+  /* Dourado — cor de destaque, vinda do pôr do sol do rooftop */
+  --ouro-400: #e3c068;
+  --ouro-500: #cfa646;
+  --ouro-600: #b08b32;
+
+  /* Areia — textos e superfícies claras */
+  --areia-50: #faf7f2;
+  --areia-100: #f1ebe1;
+  --areia-200: #e2d8c8;
+  --areia-400: #b6a892;
+  --areia-600: #7d7263;
+
+  /* Terracota — acento secundário, usado com parcimônia */
+  --terracota-500: #b2643f;
+
+  /* Papéis semânticos */
+  --fundo: var(--terra-900);
+  --fundo-elevado: var(--terra-850);
+  --superficie: var(--terra-800);
+  --borda: color-mix(in oklab, var(--areia-200) 12%, transparent);
+  --borda-forte: color-mix(in oklab, var(--areia-200) 22%, transparent);
+  --texto: var(--areia-50);
+  --texto-suave: color-mix(in oklab, var(--areia-100) 68%, transparent);
+  --texto-fraco: color-mix(in oklab, var(--areia-100) 46%, transparent);
+  --destaque: var(--ouro-500);
+  --destaque-claro: var(--ouro-400);
+
+  /* WhatsApp — cor oficial da marca, não derivar do tema */
+  --zap: #25d366;
+  --zap-escuro: #128c7e;
+}
