@@ -107,11 +107,11 @@ async function gerarIco(destino, tamanhos = [16, 32, 48]) {
   fs.writeFileSync(destino, Buffer.concat([cabecalho, ...entradas, ...pngs]));
 }
 
-await gerarIco(path.join(publicDir, "favicon.ico"));
+await gerarIco(path.join(appDir, "favicon.ico"));
 
 console.log("Ícones gerados:");
 console.log("  src/app/icon.svg");
 console.log("  src/app/icon.png");
 console.log("  src/app/apple-icon.png");
-console.log("  public/favicon.ico");
+console.log("  src/app/favicon.ico");
 console.log("  public/icones/icone-192.png, icone-512.png");
