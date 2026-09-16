@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { CIDADE, ESTADO } from "@/data/predios";
 import { WHATSAPP_EXIBICAO } from "@/lib/contato";
+import { SITE } from "@/lib/site";
 
 /**
  * A tipografia do brandbook é a ITC Avant Garde Gothic Pro (Book, Medium,
@@ -21,13 +22,6 @@ const poppins = Poppins({
 const DESCRICAO =
   `Apartamentos mobiliados em ${CIDADE} para diária, temporada e hospedagem corporativa. ` +
   `Quatro prédios, cozinha equipada, enxoval incluso e café da manhã no rooftop.`;
-
-/**
- * Domínio do site. Define NEXT_PUBLIC_SITE_URL na Vercel quando o domínio
- * definitivo existir — é o que o Next usa para montar as URLs absolutas das
- * imagens de Open Graph (a prévia que aparece ao compartilhar no WhatsApp).
- */
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://terrahospedagem.com.br";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
